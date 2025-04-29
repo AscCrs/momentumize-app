@@ -18,6 +18,20 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.user {
+  color: crimson;
+}
+
+.title {
+  font-size: 1.1em;
+  color: rgb(0, 255, 255);
+}
+
+.title:hover {
+  color: #61fbae;
+  cursor: pointer;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,6 +51,20 @@
   padding: 2em;
 }
 
-.read-the-docs {
+.data {
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 2rem;
   color: #888;
 }
