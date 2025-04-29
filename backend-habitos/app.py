@@ -11,6 +11,7 @@ from src.routes.checkins import routes as checkin_routes
 
 from src.db.config.conn import init_db
 
+
 app = Starlette(
     debug=True,
     routes=[
@@ -22,7 +23,6 @@ app = Starlette(
     ],
 )
 
-# Middleware CORS (opcional si usas frontend separado)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Cambia esto en producción
